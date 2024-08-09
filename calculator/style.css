@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/1220471324/photo/design-element-wood-texture-and-background-wooden-texture-floor-shelf-for-product-display.jpg?s=1024x1024&w=is&k=20&c=XgcDIlEZsGcvJk7uCkd7jVK5qNvfYVR_kaXC7ztS728=");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: underline;
+    color: #bdb1b1;
+}
+
+#calculator {
+    width: 275px;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: #bdb1b1;
+    border: 20px solid #bdb1b1;
+    border-radius: 10px;
+}
+
+.user-value input {
+    width: 270px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: right;
+    color: #3a3737;
+}
+
+.user-btns {
+    width: 270px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.user-btns button {
+    width: 50px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.blue {
+    color: #4d9eef;
+}
+
+.user-btns button:active {
+    background-color: #a49797;
+}
