@@ -13,7 +13,7 @@ body {
     padding: 25px;
     display: flex;
     align-items: center;
-    /* animation: ups 2s; */
+    animation: ups 2s;
 }
 
 #navbar .portfolio {
@@ -54,18 +54,20 @@ body {
     justify-content: space-between;
 }
 
-/* .info {
-    animation: rights 2s;
-} */
+.info {
+    animation: rights 3s;
+}
 
 .info h1 {
     margin-top: 25px;
-    animation: change 3s infinite linear;
+    text-shadow: #FC0 1px 0 10px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    animation: change 6s infinite linear;
 }
 
-/* .my-pic {
-    animation: lefts 2s;
-} */
+.my-pic {
+    animation: lefts 3s;
+}
 
 .my-pic img {
     transform: rotate(-45deg);
@@ -73,12 +75,22 @@ body {
 }
 
 .icons {
-    width: 300px;
+    width: 220px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icons img {
     border-radius: 50%;
-    margin-top: 20px;
+}
+
+.icons .github {
+    animation: color-change 4s infinite linear;
+}
+
+.icons .linkedin {
+    animation: colors-change 4s infinite linear;
 }
 
 @keyframes change {
@@ -182,5 +194,51 @@ body {
     to {
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+
+    10% {
+        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+    }
+
+    20% {
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
+    }
+
+    30% {
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+    }
+
+    40% {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+    }
+
+    60% {
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+    }
+
+    80% {
+        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+    }
+
+    90% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
     }
 }
