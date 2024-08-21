@@ -1,380 +1,380 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #000000;
-    overflow: hidden;
+  background-color: #000000;
+  overflow: hidden;
 }
 
 #navbar {
-    margin: 25px;
-    margin-left: 100px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    animation: ups 2s;
+  margin: 25px;
+  margin-left: 100px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  animation: ups 2s;
 }
 
 #navbar .portfolio {
-    font-size: 22px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    color: white;
+  font-size: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: white;
 }
 
 #navbar .nav {
-    width: 600px;
-    margin-left: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 600px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar a {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    color: #ffffff;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
 }
 
 #navbar a:hover {
-    color: #6b6060;
-    font-size: 22px;
-    text-decoration: underline;
+  color: #6b6060;
+  font-size: 22px;
+  text-decoration: underline;
 }
 
 .middle {
-    width: 1100px;
-    padding: 80px;
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+  width: 1100px;
+  padding: 80px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
 
 .content .text {
-    position: relative;
-    color: #6b6060;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  color: #6b6060;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content .text.first-text {
-    color: #ffff;
+  color: #ffff;
 }
 
 .text.second-text::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    border-left: 2px solid #ffff;
-    animation: animate 4s steps(12) infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid #ffff;
+  animation: animate 4s steps(12) infinite;
 }
 
 .info {
-    animation: rights 3s;
+  animation: rights 3s;
 }
 
 /* .my-pic img {
-    
 } */
 
 .icons {
-    width: 220px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+  width: 220px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icons img {
-    border-radius: 50%;
-    background-color: #ffff;
+  border-radius: 50%;
+  background-color: #ffff;
 }
 
 .icons .github:hover {
-    background-color: rgb(51, 51, 54);
-    animation: color-github 6s infinite linear;
+  background-color: rgb(51, 51, 54);
+  animation: color-github 6s infinite linear;
 }
 
 .icons .linkedin:hover {
-    background-color: #0077af;
-    animation: color-linkedin 6s infinite linear;
+  background-color: #0077af;
+  animation: color-linkedin 6s infinite linear;
 }
 
 .icons .facebook:hover {
-    background-color: #0671e1;
-    animation: color-facebook 6s infinite linear;
+  background-color: #0671e1;
+  animation: color-facebook 6s infinite linear;
 }
 
 .icons .insta:hover {
-    background-color: #d62f6a;
-    animation: color-insta 6s infinite linear;
+  background-color: #d62f6a;
+  animation: color-insta 6s infinite linear;
 }
 
 @keyframes change {
-    0% {
-        color: rgb(0, 255, 255, 0.7);
-    }
+  0% {
+    color: rgb(0, 255, 255, 0.7);
+  }
 
-    25% {
-        color: rgb(127, 255, 212, 0.7);
-    }
+  25% {
+    color: rgb(127, 255, 212, 0.7);
+  }
 
-    50% {
-        color: rgb(222, 184, 135, 0.7);
-    }
+  50% {
+    color: rgb(222, 184, 135, 0.7);
+  }
 
-    75% {
-        color: rgb(0, 255, 255, 0.7);
-    }
+  75% {
+    color: rgb(0, 255, 255, 0.7);
+  }
 
-    100% {
-        color: rgb(0, 255, 255, 0.7);
-    }
+  100% {
+    color: rgb(0, 255, 255, 0.7);
+  }
 }
 
 @keyframes glow-shadow {
-    0% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+  }
 
-    10% {
-        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.9);
-    }
+  10% {
+    box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.9);
+  }
 
-    20% {
-        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.9);
-    }
+  20% {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.9);
+  }
 
-    30% {
-        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.9);
-    }
+  30% {
+    box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.9);
+  }
 
-    40% {
-        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.9);
-    }
+  40% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.9);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.9);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.9);
+  }
 
-    60% {
-        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.9);
-    }
+  60% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.9);
+  }
 
-    70% {
-        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.9);
-    }
+  70% {
+    box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.9);
+  }
 
-    80% {
-        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.9);
-    }
+  80% {
+    box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.9);
+  }
 
-    90% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.9);
-    }
+  90% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.9);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+  }
 }
 
 @keyframes lefts {
-    from {
-        transform: translate(100px);
-        opacity: 0;
-    }
+  from {
+    transform: translate(100px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translate(0);
-        opacity: 1;
-    }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 @keyframes rights {
-    from {
-        transform: translate(-100px);
-        opacity: 0;
-    }
+  from {
+    transform: translate(-100px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translate(0);
-        opacity: 1;
-    }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 @keyframes ups {
-    from {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translate(0);
-        opacity: 1;
-    }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 @keyframes colors {
-    0% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+  }
 
-    10% {
-        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
-    }
+  10% {
+    box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+  }
 
-    20% {
-        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
-    }
+  20% {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
+  }
 
-    30% {
-        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
-    }
+  30% {
+    box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+  }
 
-    40% {
-        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
-    }
+  40% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+  }
 
-    60% {
-        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
-    }
+  60% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+  }
 
-    70% {
-        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
-    }
+  70% {
+    box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+  }
 
-    80% {
-        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
-    }
+  80% {
+    box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+  }
 
-    90% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
-    }
+  90% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+  }
 }
 
 @keyframes color-github {
-    0% {
-        box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
+  }
 
-    25% {
-        box-shadow: 0 0 20px 5px rgba(72, 57, 57, 0.9);
-    }
+  25% {
+    box-shadow: 0 0 20px 5px rgba(72, 57, 57, 0.9);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(92, 81, 81, 0.9);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(92, 81, 81, 0.9);
+  }
 
-    75% {
-        box-shadow: 0 0 20px 5px rgba(50, 48, 48, 0.9);
-    }
+  75% {
+    box-shadow: 0 0 20px 5px rgba(50, 48, 48, 0.9);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
+  }
 
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes color-linkedin {
-    0% {
-        box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
+  }
 
-    25% {
-        box-shadow: 0 0 20px 5px rgba(121, 211, 253, 0.9);
-    }
+  25% {
+    box-shadow: 0 0 20px 5px rgba(121, 211, 253, 0.9);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(5, 60, 85, 0.9);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(5, 60, 85, 0.9);
+  }
 
-    75% {
-        box-shadow: 0 0 20px 5px rgba(70, 206, 255, 0.9);
-    }
+  75% {
+    box-shadow: 0 0 20px 5px rgba(70, 206, 255, 0.9);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
+  }
 }
 
 @keyframes color-facebook {
-    0% {
-        box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
+  }
 
-    25% {
-        box-shadow: 0 0 20px 5px rgba(11, 61, 86, 0.9);
-    }
+  25% {
+    box-shadow: 0 0 20px 5px rgba(11, 61, 86, 0.9);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(91, 123, 139, 0.9);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(91, 123, 139, 0.9);
+  }
 
-    75% {
-        box-shadow: 0 0 20px 5px rgba(143, 200, 229, 0.9);
-    }
+  75% {
+    box-shadow: 0 0 20px 5px rgba(143, 200, 229, 0.9);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
+  }
 }
 
 @keyframes color-insta {
-    0% {
-        box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
-    }
+  0% {
+    box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
+  }
 
-    25% {
-        box-shadow: 0 0 20px 5px rgba(210, 91, 133, 0.9);
-    }
+  25% {
+    box-shadow: 0 0 20px 5px rgba(210, 91, 133, 0.9);
+  }
 
-    50% {
-        box-shadow: 0 0 20px 5px rgba(222, 0, 78, 0.9);
-    }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(222, 0, 78, 0.9);
+  }
 
-    75% {
-        box-shadow: 0 0 20px 5px rgba(156, 72, 102, 0.9);
-    }
+  75% {
+    box-shadow: 0 0 20px 5px rgba(156, 72, 102, 0.9);
+  }
 
-    100% {
-        box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
-    }
+  100% {
+    box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
+  }
 }
 
 @keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
 
-    40%,
-    60% {
-        left: 100%;
-    }
-
-    100% {
-        left: 0%;
-    }
+  100% {
+    left: 0%;
+  }
 }
