@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
+    overflow: hidden;
 }
 
 #navbar {
@@ -45,7 +46,7 @@ body {
 }
 
 .middle {
-    width: 1000px;
+    width: 1100px;
     padding: 80px;
     margin: 0 auto;
     margin-top: 50px;
@@ -54,15 +55,32 @@ body {
     justify-content: space-between;
 }
 
-.info {
-    animation: rights 3s;
+.content .text {
+    position: relative;
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.info h1 {
-    margin-top: 25px;
-    text-shadow: #FC0 1px 0 10px;
-    font-family: "Gill Sans Extrabold", sans-serif;
-    animation: change 6s infinite linear;
+.content .text.first-text {
+    color: #ffff;
+}
+
+.text.second-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid #ffff;
+    animation: animate 4s steps(12) infinite;
+}
+
+.info {
+    animation: rights 3s;
 }
 
 .my-pic {
@@ -83,14 +101,39 @@ body {
 
 .icons img {
     border-radius: 50%;
+    background-color: #ffff;
 }
 
 .icons .github {
-    animation: color-change 4s infinite linear;
+    animation: colors 4s infinite linear;
 }
 
 .icons .linkedin {
-    animation: colors-change 4s infinite linear;
+    animation: color-change 4s infinite linear;
+}
+
+.icons .facebook {
+    animation: color-change 4s infinite linear;
+}
+
+.icons .insta {
+    animation: color-change 4s infinite linear;
+}
+
+.icons .github:hover {
+    background-color: rgb(51, 51, 54);
+}
+
+.icons .linkedin:hover {
+    background-color: #0077af;
+}
+
+.icons .facebook:hover {
+    background-color: #0671e1;
+}
+
+.icons .insta:hover {
+    background-color: #d62f6a;
 }
 
 @keyframes change {
@@ -197,6 +240,52 @@ body {
     }
 }
 
+@keyframes colors {
+    0% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+
+    10% {
+        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+    }
+
+    20% {
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
+    }
+
+    30% {
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+    }
+
+    40% {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+    }
+
+    60% {
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+    }
+
+    80% {
+        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+    }
+
+    90% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+}
+
 @keyframes color-change {
     0% {
         box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
@@ -240,5 +329,109 @@ body {
 
     100% {
         box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+
+    10% {
+        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+    }
+
+    20% {
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
+    }
+
+    30% {
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+    }
+
+    40% {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+    }
+
+    60% {
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+    }
+
+    80% {
+        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+    }
+
+    90% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+
+    10% {
+        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+    }
+
+    20% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+    }
+
+    30% {
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+    }
+
+    40% {
+        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+    }
+
+    60% {
+        box-shadow: 0 0 20px 5px rgba(140, 121, 121, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+    }
+
+    80% {
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    }
+
+    90% {
+        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+    }
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
     }
 }
