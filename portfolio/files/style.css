@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
 }
 
@@ -22,14 +22,15 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 2px rgb(84, 137, 187);
 }
 
 #navbar .nav {
   width: 600px;
-  margin-left: 400px;
+  margin-left: 450px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -40,20 +41,22 @@ body {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 2px rgb(84, 137, 187);
 }
 
 #navbar a:hover {
-  color: #6b6060;
+  color: #ffff;
   font-size: 22px;
   text-decoration: underline;
+  text-shadow: none;
 }
 
 .middle {
-  width: 1100px;
+  width: 1150px;
   padding: 80px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -61,14 +64,17 @@ body {
 
 .content .text {
   position: relative;
-  color: #6b6060;
+  color: rgb(107, 96, 96);
+  margin-top: 10px;
   font-size: 30px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 1px 1px 2px #ffc0cb;
 }
 
 .content .text.first-text {
-  color: #ffff;
+  color: rgb(255, 255, 255);
 }
 
 .text.second-text::before {
@@ -78,17 +84,32 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
-  border-left: 2px solid #ffff;
+  background-color: rgb(0, 0, 0);
+  border-left: 2px solid rgb(255, 255, 255);
   animation: animate 4s steps(12) infinite;
+}
+
+.content p {
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .info {
   animation: rights 3s;
 }
 
-/* .my-pic img {
-} */
+.my-pic {
+  animation: lefts 3s;
+}
+
+.my-pic img {
+  border: 10px solid rgb(107, 96, 96, 1);
+  border-radius: 50%;
+  animation: img-shadow 10s infinite linear;
+}
 
 .icons {
   width: 220px;
@@ -98,8 +119,27 @@ body {
 }
 
 .icons img {
-  border-radius: 50%;
-  background-color: #ffff;
+  border-radius: 40%;
+}
+
+.icons .github {
+  background-color: rgb(107, 96, 96);
+  filter: drop-shadow(5px 5px 3px rgb(71, 59, 59));
+}
+
+.icons .linkedin {
+  background-color: rgb(45, 151, 200);
+  filter: drop-shadow(5px 5px 3px rgb(7, 62, 87));
+}
+
+.icons .facebook {
+  background-color: rgb(102, 167, 237);
+  filter: drop-shadow(4px 4px 3px rgb(102, 155, 125));
+}
+
+.icons .insta {
+  background-color: rgb(214, 47, 106);
+  filter: drop-shadow(4px 3px 3px rgb(190, 113, 140));
 }
 
 .icons .github:hover {
@@ -108,17 +148,17 @@ body {
 }
 
 .icons .linkedin:hover {
-  background-color: #0077af;
+  background-color: rgb(0, 119, 175);
   animation: color-linkedin 6s infinite linear;
 }
 
 .icons .facebook:hover {
-  background-color: #0671e1;
+  background-color: rgb(102, 167, 237);
   animation: color-facebook 6s infinite linear;
 }
 
 .icons .insta:hover {
-  background-color: #d62f6a;
+  background-color: rgb(214, 47, 106);
   animation: color-insta 6s infinite linear;
 }
 
@@ -223,6 +263,28 @@ body {
   to {
     transform: translate(0);
     opacity: 1;
+  }
+}
+
+@keyframes img-shadow {
+  0% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  25% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  75% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
   }
 }
 
@@ -369,6 +431,7 @@ body {
 }
 
 @keyframes animate {
+
   40%,
   60% {
     left: 100%;
