@@ -5,7 +5,7 @@ function skillsPoll() {
         options[i].addEventListener("click", () => {
             for (let j = 0; j < options.length; j++) {
                 if (options[j].classList.contains("selected"));
-                else{
+                else {
                     options[j].classList.remove("selected");
                 }
             }

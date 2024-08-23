@@ -222,27 +222,27 @@ body {
   transition: all 0.2s ease;
 }
 
-label.opt-1.selected{
+label.opt-1.selected {
   border: 2px solid rgb(207, 45, 0);
 }
 
-label.opt-2.selected{
+label.opt-2.selected {
   border: 2px solid rgb(7, 207, 0);
 }
 
-label.opt-3.selected{
+label.opt-3.selected {
   border: 2px solid rgb(0, 45, 207);
 }
 
-label.opt-4.selected{
+label.opt-4.selected {
   border: 2px solid rgb(207, 183, 0);
 }
 
-label.opt-5.selected{
+label.opt-5.selected {
   border: 2px solid rgb(0, 207, 193);
 }
 
-label.opt-6.selected{
+label.opt-6.selected {
   border: 2px solid rgb(152, 0, 207);
 }
 
@@ -307,55 +307,55 @@ label .row .circle::after {
   background: rgb(230, 230, 230);
 }
 
-label.selected .row .circle::after{
+label.selected .row .circle::after {
   display: block;
 }
 
-label.opt-1.selected .row .circle{
+label.opt-1.selected .row .circle {
   border-color: rgb(207, 45, 0);
 }
 
-label.opt-2.selected .row .circle{
+label.opt-2.selected .row .circle {
   border-color: rgb(7, 207, 0);
 }
 
-label.opt-3.selected .row .circle{
+label.opt-3.selected .row .circle {
   border-color: rgb(0, 45, 207);
 }
 
-label.opt-4.selected .row .circle{
+label.opt-4.selected .row .circle {
   border-color: rgb(207, 183, 0);
 }
 
-label.opt-5.selected .row .circle{
+label.opt-5.selected .row .circle {
   border-color: rgb(0, 207, 193);
 }
 
-label.opt-6.selected .row .circle{
+label.opt-6.selected .row .circle {
   border-color: rgb(152, 0, 207);
 }
 
-label.opt-1 .row .circle::after{
+label.opt-1 .row .circle::after {
   background-color: rgb(207, 45, 0);
 }
 
-label.opt-2 .row .circle::after{
+label.opt-2 .row .circle::after {
   background-color: rgb(7, 207, 0);
 }
 
-label.opt-3 .row .circle::after{
+label.opt-3 .row .circle::after {
   background-color: rgb(0, 45, 207);
 }
 
-label.opt-4 .row .circle::after{
+label.opt-4 .row .circle::after {
   background-color: rgb(207, 183, 0);
 }
 
-label.opt-5 .row .circle::after{
+label.opt-5 .row .circle::after {
   background-color: rgb(0, 207, 193);
 }
 
-label.opt-6 .row .circle::after{
+label.opt-6 .row .circle::after {
   background-color: rgb(152, 0, 207);
 }
 
@@ -394,7 +394,7 @@ label .progrees::after {
 }
 
 label.selectall .progrees,
-label.selectall .row .percent{
+label.selectall .row .percent {
   display: block;
 }
 
