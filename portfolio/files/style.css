@@ -280,7 +280,7 @@ h3 .percentage {
   animation: netlify 3s;
 }
 
-.main-contect{
+.main-contect {
   width: 900px;
   height: 320px;
   margin: 0 auto;
@@ -300,7 +300,7 @@ h3 .percentage {
   display: flex;
 }
 
-.contects p{
+.contects p {
   color: #cececece;
   margin-left: 50px;
   margin-top: 100px;
@@ -310,7 +310,7 @@ h3 .percentage {
   animation: rights 3s alternate;
 }
 
-.links-contect{
+.links-contect {
   width: 650px;
   height: 200px;
   margin-left: 250px;
@@ -321,14 +321,14 @@ h3 .percentage {
   animation: lefts 3s alternate;
 }
 
-.links-contect a{
+.links-contect a {
   color: white;
   padding: 15px;
   text-decoration: none;
   text-shadow: rgb(40, 38, 31) 1px 0 20px;
 }
 
-@keyframes change { 
+@keyframes change {
   0% {
     color: rgb(0, 255, 255, 0.7);
   }
