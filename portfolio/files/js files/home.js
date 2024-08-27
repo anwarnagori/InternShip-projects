@@ -14,3 +14,14 @@ const textLoad = () => {
 textLoad();
 
 setInterval(textLoad, 8000);
+
+
+// function toggleNavbar() {
+//     const navbar = document.getElementById('nav');
+//     if (navbar.style.display === 'flex') {
+//         navbar.style.display = 'none';
+//     }
+//     else {
+//         navbar.style.display = 'flex';
+//     }
+// }

@@ -26,6 +26,11 @@ body {
   text-shadow: 4px 2px rgb(84, 137, 187);
 }
 
+#navbar img {
+  width: 0;
+  height: 0;
+}
+
 #navbar .nav {
   width: 600px;
   margin-left: 450px;
@@ -677,5 +682,72 @@ h3 .percentage {
 
   100% {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  body {
+    background-color: #333;
+  }
+
+  #navbar {
+    border: 2px solid red;
+    width: 330px;
+    margin: 0;
+  }
+
+  #navbar .portfolio {
+    font-size: 15px;
+  }
+
+  #navbar .nav {
+    margin-left: 20px;
+    display: none;
+  }
+
+  #navbar img {
+    width: 30px;
+    height: 25px;
+    margin-left: 200px;
+    background-color: #333;
+  }
+
+  .middle {
+    border: 2px solid red;
+    width: 220px;
+  }
+
+  .content .text {
+    margin: 0;
+    font-size: 16px;
+    text-shadow: none;
+    /* position: absolute; */
+  }
+
+  .text.second-text::before {
+    background-color: #333;
+  }
+
+  .content p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .icons {
+    width: 420px;
+    margin-left: 25px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .my-pic {
+    display: none;
   }
 }
